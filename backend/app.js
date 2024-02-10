@@ -1,12 +1,14 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+require('dotenv').config(); // Load environment variables from .env file
 
 const app = express();
 const PORT = process.env.PORT || 3000;
+const MONGODB_URI = process.env.MONGODB_URI; // MongoDB connection URL from environment variable
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://dileepdk:161203@cluster0.hrr7mr3.mongodb.net/collectdata', {
+mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 });
