@@ -12,7 +12,7 @@
 ```
 2. Navigate to the project directory:
 ```
-   cd Project-3-Software-Website-
+   cd Project-3-Software-Website-/backend
 ```
 3. Install dependencies:
 ```
